@@ -1,0 +1,1 @@
+avrdude -c usbtiny -pt85 -U flash:w:cdctiny85.hex -U lfuse:w:0xf1:m -U hfuse:w:0xce:m -U efuse:w:0xff:m
