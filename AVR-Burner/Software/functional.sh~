@@ -3,7 +3,7 @@
 # (C) 2012
 
 
-PRGRM=$(zenity --width=640 --height=480 --list \
+PRGRM=$(zenity --width=500 --height=400 --list \
 --title="OpenHardware.co.za Firmware Burner"  --text "Select the Programmer you are using" --radiolist \
 --column "Select" --column "Programmer" \
 TRUE "USBtinyISP" \
@@ -75,7 +75,7 @@ case "$ans" in
 	'AVR-CDC to ATtiny2313 - max 38400 Baud')
         echo "Using a $PRGRM to burn $ans"
 	echo "Burning HEX file"
-	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt2313 -U flash:w:./hex_files/avrcdc/cdctiny2313.hex #-- check before use NB NB NB NB -U lfuse:w:0xf1:m -U hfuse:w:0xce:m -U efuse:w:0xff:m
+	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt2313 -U flash:w:./hex_files/avrcdc/file.hex -U lfuse:w:0xff:m -U hfuse:w:0xcd:m -U efuse:w:0xff:m 
 	;;
 
 	'AdaBoot Bootloader to ATmega328P - 19200 Baud')
