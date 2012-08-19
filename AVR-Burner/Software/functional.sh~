@@ -3,7 +3,7 @@
 # (C) 2012
 
 
-PRGRM=$(zenity --width=500 --height=400 --list \
+PRGRM=$(zenity --width=650 --height=400 --list \
 --title="OpenHardware.co.za Firmware Burner"  --text "Select the Programmer you are using" --radiolist \
 --column "Select" --column "Programmer" \
 TRUE "USBtinyISP" \
@@ -33,19 +33,21 @@ case "$PRGRM" in
 
 esac
 
-ans=$(zenity --width=500 --height=400 --list \
+ans=$(zenity --width=650 --height=400 --list \
 --title="OpenHardware.co.za Firmware Burner"  --text "Select the firmware / chip combination to Burn?" --radiolist \
 --column "Target" --column "Firmware" \
 TRUE "AVR-CDC to ATtiny45 - max 4800 Baud" \
 FALSE "AVR-CDC to ATtiny45 - max 4800 Baud - Inverted USB" \
 FALSE "AVR-CDC to ATtiny85 - max 4800 Baud" \
 FALSE "AVR-CDC to ATtiny85 - max 4800 Baud - Inverted USB" \
-FALSE "AVR-CDC to ATtiny2313 - max 38400 Baud" \
+FALSE "AVR-CDC to ATtiny2313 - 16Mhz - max 38400 Baud with DTR on PB5" \
 FALSE "AdaBoot Bootloader to ATmega328P - 19200 Baud" \
+FALSE "AdaBoot Bootloader to ATmega328P - 38400 Baud" \
 FALSE "AdaBoot Bootloader to ATmega328P - 4800 Baud" \
 FALSE "VUSBtiny to ATTiny45" \
 FALSE "VUSBtiny to ATTiny85" \
 )
+
 
 case "$ans" in
 	'AVR-CDC to ATtiny45 - max 4800 Baud')
@@ -72,10 +74,11 @@ case "$ans" in
 	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt85 -U flash:w:./hex_files/avrcdc/cdctiny85invusb.hex -U lfuse:w:0xf1:m -U hfuse:w:0xce:m -U efuse:w:0xff:m
 	;;
 
-	'AVR-CDC to ATtiny2313 - max 38400 Baud')
+	'AVR-CDC to ATtiny2313 - 16Mhz - max 38400 Baud with DTR on PB5')
         echo "Using a $PRGRM to burn $ans"
 	echo "Burning HEX file"
-	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt2313 -U flash:w:./hex_files/avrcdc/file.hex -U lfuse:w:0xff:m -U hfuse:w:0xcd:m -U efuse:w:0xff:m 
+	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt2313 -U flash:w:./hex_files/avrcdc/cdc2313-16.hex 
+	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -pt2313 -U lfuse:w:0xff:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
 	;;
 
 	'AdaBoot Bootloader to ATmega328P - 19200 Baud')
@@ -90,6 +93,21 @@ case "$ans" in
 			echo "Could not set fuse bits.  Exiting" ; exit 1
 		fi 
 	;;
+
+
+	'AdaBoot Bootloader to ATmega328P - 38400 Baud')
+	echo "Using a $PRGRM to burn $ans"
+	echo "Setting FUSE bits"
+	./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -p m328p -e -u -U lock:w:0x3f:m -U efuse:w:0x05:m -U hfuse:w:0xDA:m -U lfuse:w:0xFF:m
+		if [ $? == 0 ]
+  			then
+			echo "Burning HEX file"
+			./avrdude/avrdude -C ./avrdude/avrdude.conf -c $PROGRAMMER -p m328p -U flash:w:./hex_files/adaboot/AdaBoot_328_38400baud.hex -U lock:w:0x0f:m   
+			else
+			echo "Could not set fuse bits.  Exiting" ; exit 1
+		fi 
+	;;
+
 
 	'AdaBoot Bootloader to ATmega328P - 4800 Baud')
 	echo "Using a $PRGRM to burn $ans"
