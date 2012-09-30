@@ -26,16 +26,16 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -46,20 +46,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -143,28 +143,6 @@
 <wire x1="91.940375" y1="40.894509375" x2="44.185321875" y2="40.894509375" width="0.6096" layer="21"/>
 <wire x1="44.185321875" y1="40.894509375" x2="44.185321875" y2="54.711296875" width="0.6096" layer="21"/>
 <text x="98.286559375" y="38.5917125" size="2.1844" layer="21" font="vector">UD001</text>
-<text x="12.188803125" y="83.018234375" size="1.778" layer="1">A = 4</text>
-<text x="12.27171875" y="80.36165" size="1.778" layer="1">B = 2</text>
-<text x="12.1888" y="77.53903125" size="1.778" layer="1">C = 6</text>
-<text x="12.1058875" y="74.79943125" size="1.778" layer="1">D = 5</text>
-<text x="12.3546375" y="72.142846875" size="1.778" layer="1">E = 7</text>
-<text x="12.52046875" y="69.4862625" size="1.778" layer="1">F = 8</text>
-<text x="12.354634375" y="66.66364375" size="1.778" layer="1">G = 3</text>
-<text x="11.193796875" y="50.64111875" size="1.778" layer="1">Comma, Dot, Colon = 13</text>
-<text x="11.11088125" y="61.848584375" size="1.778" layer="1">Digit 1 = 9</text>
-<text x="11.1938" y="59.192" size="1.778" layer="1">Digit 2 = 10</text>
-<text x="11.276715625" y="56.369378125" size="1.778" layer="1">Digit 3 = 11</text>
-<text x="11.1938" y="53.712796875" size="1.778" layer="1">Digit 4 = 12</text>
-<text x="13.051140625" y="32.76231875" size="1.778" layer="1">0</text>
-<text x="12.968225" y="36.99625" size="1.778" layer="1">1</text>
-<text x="12.387803125" y="40.89810625" size="1.778" layer="1">5v</text>
-<text x="11.973221875" y="28.61140625" size="1.778" layer="1">A5</text>
-<text x="15.704484375" y="28.77744375" size="1.778" layer="1">A4</text>
-<text x="15.87031875" y="32.59628125" size="1.778" layer="1">A3</text>
-<text x="15.704484375" y="36.8302125" size="1.778" layer="1">A2</text>
-<text x="15.9532375" y="40.981125" size="1.778" layer="1">A1</text>
-<text x="15.87031875" y="44.71694375" size="1.778" layer="1">A0</text>
-<text x="12.139053125" y="45.132034375" size="1.016" layer="1">GND</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -3327,32 +3305,6 @@ design rules under a new name.</description>
 <signal name="S$136">
 <wire x1="45.3904125" y1="43.434884375" x2="54.064540625" y2="43.434884375" width="1.27" layer="16"/>
 <wire x1="54.064540625" y1="43.434884375" x2="54.248196875" y2="43.618540625" width="1.27" layer="16"/>
-</signal>
-<signal name="S$137">
-<wire x1="11.47571875" y1="46.128253125" x2="11.558634375" y2="46.128253125" width="0.4064" layer="1"/>
-<wire x1="11.558634375" y1="46.128253125" x2="11.558634375" y2="27.86424375" width="0.4064" layer="1"/>
-<wire x1="11.558634375" y1="27.86424375" x2="18.93825" y2="27.86424375" width="0.4064" layer="1"/>
-<wire x1="18.93825" y1="27.86424375" x2="18.93825" y2="27.6151875" width="0.4064" layer="1"/>
-<wire x1="18.93825" y1="27.6151875" x2="19.021165625" y2="27.6151875" width="0.4064" layer="1"/>
-<wire x1="19.021165625" y1="27.6151875" x2="19.021165625" y2="35.66795625" width="0.4064" layer="1"/>
-<wire x1="19.021165625" y1="35.66795625" x2="19.021165625" y2="47.456546875" width="0.4064" layer="1"/>
-<wire x1="19.021165625" y1="47.456546875" x2="11.558634375" y2="47.456546875" width="0.4064" layer="1"/>
-<wire x1="11.558634375" y1="47.456546875" x2="11.558634375" y2="46.128253125" width="0.4064" layer="1"/>
-<wire x1="11.72446875" y1="35.66795625" x2="19.021165625" y2="35.66795625" width="0.4064" layer="1"/>
-</signal>
-<signal name="S$138">
-<wire x1="11.64155" y1="39.73585" x2="18.93825" y2="39.73585" width="0.4064" layer="1"/>
-<wire x1="18.93825" y1="39.73585" x2="18.93825" y2="39.65283125" width="0.4064" layer="1"/>
-</signal>
-<signal name="S$139">
-<wire x1="11.64155" y1="31.51704375" x2="18.855334375" y2="31.51704375" width="0.4064" layer="1"/>
-</signal>
-<signal name="S$140">
-<wire x1="11.72446875" y1="43.8867625" x2="18.93825" y2="43.8867625" width="0.4064" layer="1"/>
-</signal>
-<signal name="S$141">
-<wire x1="15.2899" y1="47.290509375" x2="15.538653125" y2="47.290509375" width="0.4064" layer="1"/>
-<wire x1="15.538653125" y1="47.290509375" x2="15.538653125" y2="28.279334375" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
