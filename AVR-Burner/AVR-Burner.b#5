@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,20 +9,6 @@
 <grid distance="0" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -182,23 +168,6 @@
 <circle x="10.8910375" y="34.582925" radius="0.63198125" width="0.4064" layer="16"/>
 <circle x="11.02803125" y="34.445690625" radius="0.7658625" width="0.4064" layer="16"/>
 <circle x="11.02803125" y="34.445690625" radius="0.36895625" width="0.4064" layer="16"/>
-<circle x="21.8009375" y="31.37126875" radius="0.94236875" width="0.4064" layer="16"/>
-<circle x="21.8009375" y="36.498734375" radius="0.99248125" width="0.4064" layer="16"/>
-<circle x="17.837128125" y="33.35609375" radius="0.66293125" width="0.4064" layer="16"/>
-<circle x="17.89218125" y="31.316134375" radius="0.71780625" width="0.4064" layer="16"/>
-<circle x="17.782078125" y="26.0784" radius="0.778584375" width="0.4064" layer="16"/>
-<circle x="17.782078125" y="38.373290625" radius="0.71780625" width="0.4064" layer="16"/>
-<circle x="51.254221875" y="10.7511375" radius="0.9504" width="0.4064" layer="16"/>
-<circle x="46.079253125" y="10.7511375" radius="0.85473125" width="0.4064" layer="16"/>
-<circle x="48.942" y="7.7739" radius="0.83873125" width="0.4064" layer="16"/>
-<circle x="46.244409375" y="7.44309375" radius="0.772709375" width="0.4064" layer="16"/>
-<circle x="46.244409375" y="2.3707625" radius="0.772709375" width="0.4064" layer="16"/>
-<circle x="48.886946875" y="2.536165625" radius="0.770740625" width="0.4064" layer="16"/>
-<circle x="4.5418" y="28.10543125" radius="0.668609375" width="0.4064" layer="16"/>
-<circle x="12.20321875" y="28.059509375" radius="0.69425" width="0.4064" layer="16"/>
-<circle x="21.280603125" y="21.007621875" radius="0.964184375" width="0.4064" layer="16"/>
-<circle x="23.89289375" y="20.943865625" radius="0.901065625" width="0.4064" layer="16"/>
-<text x="37.69659375" y="18.389496875" size="1.27" layer="16" font="vector" ratio="17" rot="MR90">OPENHARDWARE.CO.ZA</text>
 </plain>
 <libraries>
 <library name="atmel">
@@ -1548,23 +1517,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="LED3MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-3 mm, round</description>
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108" cap="flat"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949" cap="flat"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022" cap="flat"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822" cap="flat"/>
-<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.254" layer="21"/>
-<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="SparkFun-FreqCtrl">
@@ -1797,8 +1749,6 @@ design rules under a new name.</description>
 <element name="E$13" library="rcl" package="C050-024X044" value="" x="17.85421875" y="35.876828125" rot="R90"/>
 <element name="E$14" library="rcl" package="C050-024X044" value="" x="17.85421875" y="28.761278125" rot="R90"/>
 <element name="E$15" library="rcl" package="C050-024X044" value="" x="74.28334375" y="51.994275"/>
-<element name="E$16" library="rcl" package="0204/7" value="2K2" x="8.345125" y="28.1705375"/>
-<element name="E$17" library="SparkFun-LED" package="LED3MM" value="" x="22.535528125" y="20.97769375"/>
 </elements>
 <signals>
 <signal name="S$37">
@@ -2426,23 +2376,6 @@ design rules under a new name.</description>
 <signal name="S$99">
 <wire x1="8.904621875" y1="40.552596875" x2="6.782771875" y2="40.552596875" width="0.4064" layer="16"/>
 <wire x1="6.782771875" y1="40.552596875" x2="5.89075" y2="39.660575" width="0.4064" layer="16"/>
-</signal>
-<signal name="S$102">
-<via x="0" y="0" extent="1-16" drill="0.6" shape="square"/>
-</signal>
-<signal name="S$103">
-<wire x1="5.995653125" y1="39.35161875" x2="6.180103125" y2="39.35161875" width="0.4064" layer="1"/>
-<wire x1="6.180103125" y1="39.35161875" x2="11.134784375" y2="34.3969375" width="0.4064" layer="1"/>
-</signal>
-<signal name="S$104">
-<wire x1="12.35819375" y1="27.793790625" x2="12.35819375" y2="25.341815625" width="0.4064" layer="16"/>
-<wire x1="12.35819375" y1="25.341815625" x2="14.935571875" y2="22.7644375" width="0.4064" layer="16"/>
-<wire x1="14.935571875" y1="22.7644375" x2="19.4929625" y2="22.7644375" width="0.4064" layer="16"/>
-<wire x1="19.4929625" y1="22.7644375" x2="21.41205625" y2="20.84534375" width="0.4064" layer="16"/>
-</signal>
-<signal name="S$105">
-<wire x1="23.857259375" y1="20.97769375" x2="29.114125" y2="20.97769375" width="0.4064" layer="16"/>
-<wire x1="29.114125" y1="20.97769375" x2="31.251903125" y2="18.839915625" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
